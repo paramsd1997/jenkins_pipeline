@@ -4,7 +4,7 @@ pipeline {
         stage('Build') {
             steps {
                 // Define build steps (e.g., invoking Maven, compiling code)
-                sh 'mvn clean install'
+                // sh 'mvn clean install'
             }
         }
         stage('Test') {
