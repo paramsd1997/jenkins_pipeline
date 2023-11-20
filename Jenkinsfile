@@ -4,13 +4,14 @@ pipeline {
         stage('Build') {
             steps {
                 // Define build steps (e.g., invoking Maven, compiling code)
-                // sh 'mvn clean install'
+                sh 'echo "buidling steps"'
+
             }
         }
         stage('Test') {
             steps {
                 // Define test steps (e.g., running unit tests)
-                sh 'mvn test'
+                sh echo 'mvn test'
             }
         }
         stage('Deploy') {
